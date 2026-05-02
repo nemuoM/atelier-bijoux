@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Atelier Bijoux — Créations sur mesure Aix</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:#fff;background:#0a0a0a;line-height:1.6}
+.overlay{position:fixed;top:0;left:0;right:0;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;z-index:20;background:linear-gradient(to bottom,rgba(0,0,0,.7),transparent)}
+.overlay .logo{font-weight:400;font-size:16px;letter-spacing:3px;text-transform:uppercase}
+.overlay a{color:#aaa;text-decoration:none;margin-left:24px;font-size:13px;letter-spacing:.5px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:4px}
+.piece{background:#1a1a1a;aspect-ratio:1;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;position:relative;overflow:hidden;transition:.3s}
+.piece::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);opacity:0;transition:.3s}
+.piece:hover::before{opacity:1}
+.piece h3{position:relative;z-index:2;font-size:15px;font-weight:500;margin-bottom:4px;opacity:0;transform:translateY(10px);transition:.3s}
+.piece p{position:relative;z-index:2;font-size:12px;color:#aaa;opacity:0;transform:translateY(10px);transition:.3s}
+.piece:hover h3,.piece:hover p{opacity:1;transform:translateY(0)}
+.piece:nth-child(3){grid-column:span 2;grid-row:span 2}
+.piece:nth-child(7){grid-column:span 2}
+.piece:nth-child(8){grid-row:span 2}
+.about{padding:100px 40px;text-align:center;max-width:600px;margin:0 auto}
+.about h2{font-size:28px;font-weight:400;margin-bottom:16px;letter-spacing:-.5px}
+.about p{color:#999;font-size:15px;line-height:1.8}
+.process{display:flex;gap:0;border-top:1px solid #222;border-bottom:1px solid #222;max-width:1000px;margin:0 auto}
+.process-step{flex:1;padding:48px 32px;text-align:center;border-right:1px solid #222}
+.process-step:last-child{border-right:none}
+.process-step h3{font-size:14px;font-weight:500;margin-bottom:8px}
+.process-step p{font-size:13px;color:#777}
+.contact{text-align:center;padding:80px 40px}
+.contact p{color:#777;font-size:14px;margin-bottom:6px}
+.footer{text-align:center;padding:24px;font-size:11px;color:#444;border-top:1px solid #222}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.piece:nth-child(3){grid-column:span 2;grid-row:span 1}.piece:nth-child(8){grid-row:span 1}.process{flex-direction:column}.process-step{border-right:none;border-bottom:1px solid #222}.process-step:last-child{border-bottom:none}}
+@media(max-width:600px){.overlay{padding:16px 20px}.overlay a{margin-left:14px;font-size:12px}}
+</style></head>
+<body>
+<header class="overlay"><div class="logo">L'Atelier Bijoux</div><nav><a href="#creations">Créations</a><a href="#surmesure">Sur mesure</a><a href="#contact">Contact</a></nav></header>
+<section class="gallery" id="creations">
+<div class="piece" style="background:#2a1f1f"><h3>Bague Soleil</h3><p>Or jaune, citrine</p></div>
+<div class="piece" style="background:#1f1f2a"><h3>Collier Lavande</h3><p>Améthyste, argent</p></div>
+<div class="piece" style="background:#1a1a1a"><h3>Collection Été 2026</h3><p>Découvrez nos nouvelles pièces inspirées de la Méditerranée</p></div>
+<div class="piece" style="background:#2a2a1f"><h3>Boucles Calanques</h3><p>Turquoise, or blanc</p></div>
+<div class="piece" style="background:#1f2a1f"><h3>Bague Forêt</h3><p>Émeraude, platine</p></div>
+<div class="piece" style="background:#2a1f2a"><h3>Pendentif Grenat</h3><p>Or rose, grenat rhodolite</p></div>
+<div class="piece" style="background:#1a1a1a"><h3>Alliance sur mesure</h3><p>Chaque alliance est dessinée selon votre histoire</p></div>
+<div class="piece" style="background:#1f2a2a"><h3>Boucles Topaze</h3><p>Topaze bleue, or jaune</p></div>
+</section>
+<section class="about" id="surmesure"><h2>Sur mesure</h2><p>Vous avez une idée ? Nous la transformons en bijou. De la première esquisse à la livraison, chaque étape se passe dans notre atelier aixois. Délai moyen : 3 à 4 semaines.</p></section>
+<section class="process">
+<div class="process-step"><h3>01. Rencontre</h3><p>On discute de votre idée, style, budget</p></div>
+<div class="process-step"><h3>02. Esquisse</h3><p>Plusieurs propositions, affinage ensemble</p></div>
+<div class="process-step"><h3>03. Création</h3><p>Fabrication artisanale, livraison soignée</p></div>
+</section>
+<section class="contact" id="contact"><p>15 Rue des Tanneurs, 13100 Aix-en-Provence</p><p>creations@atelierbijoux-aix.fr — 04 42 27 88 91</p><p>Mar–Sam : 10h–13h / 14h–19h</p></section>
+<div class="footer">L'Atelier Bijoux — Aix-en-Provence</div>
+</body></html>
